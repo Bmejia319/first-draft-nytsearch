@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Search</title>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css"/> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cardo|Cormorant+Garamond|EB+Garamond|Questrial" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cardo|Cormorant+Garamond|Didact+Gothic|EB+Garamond|Questrial" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
+    
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-1">
+                <img class="nytlogo" src="./assets/images/232e05cb7fa3a186d9fb52f39861592c.png">
+            </div>
+            <div class = "col-md-11">
+                    <h1>Search<span class="blinking-cursor">|</span> </h1>
+             </div>
+        </div>
+        
+        <div class= "row">
+            <div class = "col-md-5">
+                <form id="search-parameters">
+                    <h5>Search Term: </h5>
+                    <input class="form-control" type="text" placeholder="Search search-term" id = "search-term">
+                    <h5>Number of Records to Retrieve: </h5>
+                    <input class="form-control" type="text" placeholder="#" id = "retrieve">
+                    <h5>Start Year (Optional): </h5>
+                    <input class="form-control" type="text" placeholder="Start Year" id ="start-year">
+                    <h5>End Year (Optional): </h5>
+                    <input class="form-control" type="text" placeholder="End Year" id = "end-year">
+                </form>
+                    <button type="button" class="btn btn-light" id = "search-button" >Search</button>
+                    <button type="button" class="btn btn-light" id = "clear" >Clear Results</button>
+                    <!-- <img class="building" src="./assets/images/nytimeslogo.png"> -->
+                    <div class="card">
+                            <h5 class="card-header">trending articles</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                          </div>
+            </div>
+            
+            <!-- Articles will populate in the section below -->
+            
+            <div class = "col-md-7">
+                <div class = "row">
+                    <div class = "col-md-12">
+                   
+                     <h2>Top Articles</h2>
+                    </div>
+                <div class = "row">
+                    <div class="col-md-2">
+                        <h3 id = "number" >.01</h3>
+                    </div>
+
+                    <!-- To solve this create a ul, then li elements. 
+                        Then, append the articles to the li elements
+                        For A's page to there has to be a counter...-->
+
+                    <div class = "col-md-10" id="wellSection"> 
+                    </div>
+                </div>
+                </div>
+               
+                
+            
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>  -->
+        
+        <script src="assets/javascript/logic.js"></script>
+
+</body>
+</html>
